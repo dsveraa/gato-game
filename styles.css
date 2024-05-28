@@ -1,0 +1,78 @@
+:root {
+  --background-color: #e4e4e4;
+  --text-color: #292929;
+  --link-color: #fcb605;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #242424;
+    --text-color: #d7d7d7;
+    --link-color: #fcb605;
+  }
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+  font-size: 18px;
+  transition: 0.2s ease;
+}
+
+a:hover {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.posicion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.ancho {
+  width: 450px;
+}
+
+.col {
+  height: 150px;
+}
+
+.juego .col {
+  font-size: 100px;
+  color: #d7d7d7;
+}
+
+.hide {
+  display: none;
+}
+
+.style {
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.line-winner {
+  position: absolute;
+  height: 4px;
+  background-color: #fcb605;
+  transition: all 1s;
+  transform-origin: 0 50%; 
+}
+
+.position-relative {
+  position: relative;
+}
+
+.basis-0 {
+  flex-basis: 0;
+}
+
+.color {
+  color:#fcb605;
+}
